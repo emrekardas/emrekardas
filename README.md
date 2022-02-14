@@ -5,7 +5,7 @@
 💡 &nbsp;I like to explore new technologies and develop software solutions.\
 🎓 &nbsp;I'm currently studying Information System and Tech. at the Yeditepe Universtiy.\
 🌱 &nbsp;I'm on track for learning more about Artificial Intelligence, Mobile Application, and Cloud Architecture.\
-📸 &nbsp;In my free time, I pursue Photography as hobbies/side hustles.\
+📸 &nbsp;In my free time, I pursue Photography as hobbies / side hustles.\
 
 ### 🤝🏻 &nbsp;Connect with Me
 
