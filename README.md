@@ -6,7 +6,7 @@
 🎓 &nbsp;I'm currently studying Information System and Tech. at the Yeditepe Universtiy.\
 🌱 &nbsp;I'm on track for learning more about Artificial Intelligence, Mobile Application, and Cloud Architecture.\
 📸 &nbsp;In my free time, I pursue Photography as hobbies / side hustles.\
-📄 &nbsp;Please have a look at my [Resume](https://emrekardas.com.tr/wp-content/uploads/2022/02/emre_kardas.pdf) for more details about me. I'm open to feedback and suggestions!
+📄 &nbsp;Please have a look at my [Resume](https://emrekardas.com/resume_emre_kardas.pdf) for more details about me. I'm open to feedback and suggestions!
 ### 🤝🏻 &nbsp;Connect with Me
 
 <p align="center">
