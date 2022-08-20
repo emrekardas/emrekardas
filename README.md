@@ -4,7 +4,7 @@
 
 💡 &nbsp;I like to explore new technologies and develop software solutions.\
 🎓 &nbsp;I graduated from Yeditepe University with a bachelor's degree in Information Systems and Technologies.\
-📍 &nbsp;I work at an Anatomi.io as a Junior Web Developer
+📍 &nbsp;I work at an Anatomi.io as a Junior Web Developer.\
 🌱 &nbsp;I'm on track for learning more about Web Development and Mobile Application.\
 📸 &nbsp;In my free time, I pursue Photography as hobbies / side hustles.\
 📄 &nbsp;Please have a look at my [Resume](https://emrekardas.github.io/CV/) for more details about me. I'm open to feedback and suggestions!
