@@ -1,22 +1,31 @@
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import TabletFrame from './components/layout/TabletFrame'
-import Hero from './components/sections/Hero'
-import Works from './components/sections/Works'
-import BlogPreview from './components/sections/BlogPreview'
-import About from './components/sections/About'
+"use client";
+
+import { useState } from "react";
+import { cn } from "@/app/lib/utils";
+import { BeamsBackground } from "@/app/components/effects/beams-background";
+import { DistortionCanvas } from "@/app/components/effects/distortion-canvas";
+import { Footer } from "@/app/components/layout/footer";
+import { HeroSection } from "@/app/components/sections/hero-section";
+import { ProjectsSection } from "@/app/components/sections/projects-section";
 
 export default function Home() {
+  const [isDarkMode] = useState(true);
+
   return (
-    <>
-      <Navbar />
-      <TabletFrame>
-        <Hero />
-        <Works />
-        <BlogPreview />
-        <About />
-      </TabletFrame>
-      <Footer />
-    </>
-  )
+    <div
+      className={cn(
+        "min-h-screen font-sans transition-colors duration-500",
+        !isDarkMode && "light"
+      )}
+    >
+      <BeamsBackground />
+      <DistortionCanvas />
+
+      <main className="relative z-10">
+        <HeroSection />
+        <ProjectsSection />
+        <Footer />
+      </main>
+    </div>
+  );
 }
