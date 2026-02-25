@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi, I'm Emre 👋
 
-## Getting Started
+<p align="left">
+  <b>Software Engineer · London, UK 🇬🇧</b><br/>
+  Building web & mobile products that people actually use.
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🚀 About Me
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 💼 Junior Software Engineer based in London
+- 📱 Published iOS app on the App Store — [**Scanify**](https://apps.apple.com/gb/app/scanify/id6738396697)
+- 🌐 Building side projects: [ruyayorum.la](https://www.ruyayorum.la/) · [filmoneri.si](https://filmoneri.si/)
+- 🎓 Computer Science graduate from Northumbria University
+- 📄 [Resume / CV](https://read.cv/emrekardas)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🛠️ Tech Stack
 
-## Learn More
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📊 GitHub Stats
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<p align="left">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=emrekardas&show_icons=true&theme=default&hide_border=true&count_private=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emrekardas&layout=compact&theme=default&hide_border=true&langs_count=6" />
+</p>
 
-## Deploy on Vercel
+<p align="left">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=emrekardas&theme=default&hide_border=true" />
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔗 Connect
+
+<p align="left">
+  <a href="https://linkedin.com/in/emrekardas">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/eemrekardas">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://read.cv/emrekardas">
+    <img src="https://img.shields.io/badge/CV-000000?style=flat-square&logo=read.cv&logoColor=white" />
+  </a>
+  <a href="mailto:thekrdsapp@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://linktr.ee/emrekardas">
+    <img src="https://img.shields.io/badge/Linktree-43E55E?style=flat-square&logo=linktree&logoColor=white" />
+  </a>
+</p>
