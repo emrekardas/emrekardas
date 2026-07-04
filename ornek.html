@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html class='trial no-js' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
+  xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <meta content='adb1306674b0ed97' name='yandex-verification' />
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+  <b:include data='blog' name='all-head-content' />
+  <meta
+    content='iOS ve Android uygulama geliştirici olarak freelance çalışıyorum. Freelance android geliştirici veya freelance iOS geliştirici arıyorsanız birlikte çalışabiliriz.'
+    name='description' />
+  <meta content='Enes Eray,yazılımcı blogları, android geliştirici, girişimcilik, freelance çalışmak' name='keywords' />
+  <meta content='Enes Eray' name='author' />
+  <link href='https://twitter.com/heyeneseray' rel='publisher' />
+  <link href='https://twitter.com/heyeneseray' rel='author' />
+  <link href='https://twitter.com/heyeneseray' rel='me' />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+  <meta content='Turkey' name='geo.placename' />
+  <!--########### SEO Titles ########### -->
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <title>
+      <data:blog.pageTitle />
+    </title>
+    <b:else />
+    <title>
+      <data:blog.pageName />
+
+      <data:blog.title />
+    </title>
+  </b:if>
+  <!--########### SEO Meta ########### -->
+  <b:if cond='data:blog.url != data:blog.homepageUrl'>
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+        <meta expr:content='data:blog.metaDescription' name='description' />
+      </b:if>
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.searchLabel'>
+      <meta content='noindex,nofollow' name='robots' />
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+    <meta content='noindex,nofollow' name='robots' />
+  </b:if>
+  <b:if cond='data:blog.isMobile'>
+    <meta content='noindex,nofollow' name='robots' />
+  </b:if>
+  <!-- SEO Title Tag -->
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <title>
+      <data:blog.title />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <title>
+      <data:blog.pageName />
+      |
+      <data:blog.title />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+    <title>
+      Archive for
+      <data:blog.pageName />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+    <title>
+      <data:blog.pageName />
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.searchLabel'>
+      <title>
+        <data:blog.title />
+        -
+        <data:blog.pageName />
+      </title>
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+    <title>
+      Page Not Found
+    </title>
+  </b:if>
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <b:if cond='data:blog.url != data:blog.homepageUrl'>
+      <title>
+        <data:blog.pageTitle />
+        - All Post
+      </title>
+    </b:if>
+  </b:if>
+  <!--############# Facebook Graph ################-->
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <meta expr:content='data:blog.pageName' property='og:title' />
+    <meta expr:content='data:blog.canonicalUrl' property='og:url' />
+    <meta content='article' property='og:type' />
+  </b:if>
+  <meta expr:content='data:blog.title' property='og:site_name' />
+  <b:if cond='data:blog.postImageThumbnailUrl'>
+    <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image' />
+    <b:else />
+    <meta content='Blog Logo URL Here' property='og:image' />
+  </b:if>
+
+  <meta content='Facebook App ID here' property='fb:app_id' />
+  <meta content='Facebook Admins ID here' property='fb:admins' />
+  <!--############# Fonts Links ################-->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans:300italic,:400italic,400,300,600,700,800|Rambla:700'
+    rel='stylesheet' type='text/css' />
+  <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  <link href='http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css' rel='stylesheet'
+    type='text/css' />
+  <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript' />
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js' type='text/javascript' />
+  <link href='https://www.blogger.com/static/v1/widgets/1428447971-widget_css_bundle.css' rel='stylesheet'
+    type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' />
+  <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet'
+    type='text/css' />
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
+    rel='stylesheet' type='text/css' />
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLibre Caslon Tex%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.8'
+    id='google-fonts-1-css' media='all' rel='stylesheet' type='text/css' />
+
+  <b:skin>
+    <![CDATA[
+      
+*/
+body#layout ul, li{list-style:none;}
+body#layout #main-content, .full-width-slider { float: none; width: 100%; }
+body#layout .section-content {padding:0;margin:0;}
+body#layout .contact-form {display:none;}
+body#layout #main-sidebar {float: none; width: 100%; height: 100%; position: relative;}
+body#layout .responsive-navigation {display:none;}
+body#layout .header-bg {display:none;}
+body#layout #about {display:none;}
+body#layout #services {display:none;}
+body#layout #contact-form {display:none;}
+body#layout #blog { margin-top: -180px; }
+.col-md-6 {
+width: 100% !important;
+}
+/*==///////////////////////////////////////////
+//           Main Menu Style            
+/////////////////////////////////////////==*/
+.main-menu, .responsive-menu ul, .social-member, .progess-bars, .first-footer .social-footer ul { padding: 0; margin: 0; list-style: none; }
+body { 
+  font: 14px/1.85emLibre Caslon Text; 
+  color: white; 
+  font-weight: 300; 
+  font-style: normal; 
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+   -webkit-text-size-adjust: 100%;
+       font-family: "DM Sans", sans-serif;
+   }
+a, a:hover, a:focus { text-decoration: none; -webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; }
+
+h1, h2, h3, h4, h5, h6 {
+        font-family: "DM Sans", sans-serif;
+font-weight: 300;
+}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#main-content, .full-width-slider {
+background: #fff none repeat scroll 0 0;
+float: right;
+margin-top: 50px;
+width: 100%;
+}
+.section-content { 
+  padding: 0 7.5%; 
+  margin-bottom: 50px; 
+}
+.section-title {
+border-top: 0px solid;
+margin-bottom: 40px;
+}
+.section-title h2 {
+
+color: #000;
+display: inline-block;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 0.5px;
+margin: 0;
+padding: 20px 15px;
+text-transform: uppercase;
+}
+/*==///////////////////////////////////////////
+//           Pagination Style            
+/////////////////////////////////////////==*/
+.showpageOf {
+display: none;
+}
+.showpagePoint {
+padding: 10px 15px 10px 15px;
+background: #2d3e50;
+float: left;
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+display: none !important;
+}
+.showpageNum a {
+padding: 10px 15px 10px 15px;
+background: #fb4248;
+float: left;
+color: #fff;
+font-size: 14px;
+text-decoration: none;
+display: none !important;
+}
+.showpage a:hover {
+background: none repeat scroll 0 0 #000;
+}
+.showpageNum a:hover {
+background: #2d3e50;
+}
+.showpageArea {
+border: 1px solid #f4f4f4;
+float: left;
+padding: 10px 0;
+width: 100%;
+}
+#blog-pager-older-link a, #blog-pager-newer-link a, a.home-link {
+background: none repeat scroll 0 0 transparent;
+color: #a9a9a9;
+text-decoration: none;
+}
+.showpageNum a {
+background: #ff1919;
+color: #fff;
+font-size: 10px;
+font-weight: 800;
+text-decoration: none;
+}
+.showpage a {
+background: #333 none repeat scroll 0 0;
+color: #fff;
+        font-family: "DM Sans", sans-serif;
+font-size: 10px;
+font-weight: 800;
+text-decoration: none;
+border: 2px solid #fafafa;
+padding: 9px 42px;
+}
+.showpage a:hover {
+color: #fff;
+}
+.showpageArea span {
+position: relative !important;
+top: 0 !important;
+}
+/*==///////////////////////////////////////////
+//         Author Archieve                   
+/////////////////////////////////////////==*/
+.author-archive {
+background: #ffffff none repeat scroll 0 0;
+border: 1px solid #f1f1f1;
+border-radius: 4px;
+margin: 30px 0 10px;
+padding: 10px 28px;
+}
+.author-archive .soc-icon {
+margin: 0;
+}
+.author-archive img {
+border-radius: 0;
+}
+.author-archive h3 {
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+border: medium none;
+color: #000;
+font-size: 22px;
+font-weight: 400;
+margin: -3px 0 15px;
+padding: 0;
+}
+.author-archive p {
+background: #fff none repeat scroll 0 0;
+color: #777;
+        font-family: "DM Sans", sans-serif;
+font-size: 14px;
+margin: 0 0 15px;
+padding: 5px 5px 15px 17px;
+}
+.author-avatar img {
+float: left;
+margin: 0 15px 0 0;
+width: 13%;
+}
+/*==///////////////////////////////////////////
+//                 Bottom to Top              
+/////////////////////////////////////////==*/
+.back-to-top {
+float: right;
+}
+.back-to-top .fa {
+background: #202020 none repeat scroll 0 0;
+border-radius: 50px;
+color: #fff;
+font-size: 1.3em;
+padding: 10px 13px;
+}
+.back-to-top .fa:hover {
+background-color: #222;
+}
+.copyright {
+margin: auto;
+text-align: center;
+}
+#about h2, #services h2, #blog h2, #contact-form h2 {
+background-color: transparent;
+} 
+#about span, #services span, #blog span, #contact-form span {
+font-size: 15px;
+padding-left: 10px;
+position: relative;
+top: 10px;
+}
+#about .section-title, #blog .section-title, #services .section-title, #contact-form .section-title { border-color: #afafaf; }
+#about h3.name {
+background: #eee none repeat scroll 0 0;
+        font-family: "DM Sans", sans-serif;
+font-size: 16px;
+font-weight: 600;
+margin: 0;
+padding: 10px 3px;
+text-align: center;
+}
+#about h3.name > span {font-weight: 300;margin: 0 5px;font-size: 13px;}
+#about h3.name span {
+position: relative;
+top: 0;
+}
+.submit.largeButton, #contact-form [id$="_contact-form-submit"] {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: -moz-use-text-color;
+border-image: none;
+border-style: none none solid;
+border-width: 0 0 0px;
+box-shadow: none;
+color: #ffff;
+display: inline-block;
+font-size: 14px;
+font-weight: 700;
+padding: 10px 20px;
+text-transform: uppercase;
+width: inherit;
+}
+/*==///////////////////////////////////////////
+//           Header Logo Style            
+/////////////////////////////////////////==*/
+.homeBgColor { background: #38a9e3; }
+.homeBgColor:hover { background-color: #16709f; }
+.contactBgColor,#contact-form [id$=_contact-form-submit]{ background: #396684; }
+.contactBgColor:hover { background-color: #9f164d; }
+a.largeButton.homeBgColor { border-color: #16709f; }
+#main-sidebar {
+background-color: #fff;
+border-right: 1px solid #ddd;
+color: white;
+float: left;
+height: 100%;
+position: fixed;
+width: 23%;
+}
+.logo {
+background-color: #fff;
+border: 0px solid #fafafa;
+margin: 0px 0;
+padding: 25px 40px;
+}
+.logo a { color: white; }
+#headur h1 {
+color: #000;
+font-family:Libre Caslon Text, Serif;
+font-size: 25px;
+font-weight: 800;
+margin: 0;
+text-align: center;
+text-transform: uppercase;
+}
+.logo img {
+height: 115%;
+vertical-align: middle;
+width: 115%;
+}
+.logo span { color: #555; font-size: 13px; }
+.main-menu { text-align: center; }
+.main-menu li { margin-bottom: 0px; }
+.main-menu li a {
+background-color: #fff;
+border-left: 4px solid;
+color: #555;
+display: block;
+font-family: HelveticaNeue-Light ;
+font-size: 14px;
+padding: 15px 30px;
+text-transform: uppercase;
+transition: all 150ms ease-in 0s;
+}
+.main-menu li a:hover { background-color: #fafafa; }
+li.home a { border-color: #38a9e3; }
+li.home a.active { color: #38a9e3; }
+li.about a { border-color: #e9b144; }
+li.about a.active { color: #e9b144; }
+li.services a { border-color: #974dea; }
+li.services a.active { color: #974dea; }
+li.blog a { border-color: #38e395; }
+li.blog a.active { color: #38e395; }
+li.contact a { border-color: #e3387c; }
+li.contact a.active { color: #e3387c; }
+.responsive-navigation { position: relative; width: 100%; display: block; z-index: 9999; }
+.responsive-menu { display: none; background-color: #495054; }
+.responsive-menu ul li a {
+border-bottom: 1px solid #5a6267;
+color: #333;
+display: block;
+padding: 20px;
+text-transform: uppercase;
+}
+.header-bg {
+background-position: center top;
+background-size: cover;
+color: #fff;
+float: left;
+height: 595px;
+position: relative;
+text-align: center;
+width: 100%;
+}
+.text-header {
+color: #555;
+position: absolute;
+text-align: center;
+top: 200px;
+vertical-align: middle;
+width: 100%;
+z-index: 8;
+}
+.header-bg:after {
+content: "";
+display: block;
+width: 100%;
+position: absolute;
+height: 100%;
+opacity: 0.4;
+}
+#main-content > div > div > h2 {
+color: #333 !important;
+        font-family: "DM Sans", sans-serif;
+font-size: 77px;
+font-weight: 800;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+#main-content > div > div > p {
+        font-family: "DM Sans", sans-serif;
+font-size: 14px;
+letter-spacing: 2px;
+line-height: 1.8em;
+margin: 20px auto 25px;
+width: 49%;
+}
+/*==///////////////////////////////////////////
+//           Service Style            
+/////////////////////////////////////////==*/
+.service-item { background-color: #ff0000; color: white; }
+.service-item .service-icon { width: 25%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 17px; height: 100%; }
+.service-item .service-content { width: 75%; overflow: hidden; text-align: left; padding: 20px 20px 20px 0; }
+.service-item .service-content h3 {
+          font-family: "DM Sans", sans-serif;
+font-size: 18px;
+font-weight: 300;
+margin: 0;
+}
+.our-skills { margin-top: 80px; }
+.our-skills h3 { color: #974dea; font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0 0 20px 0; }
+.progress-bar {
+text-transform: uppercase; font-size: 12px; }
+.progress {height: 28px;}
+.progress div{line-height: 28px;}
+.blog-thumb { overflow: hidden; position: relative; }
+.blog-thumb img { width: 100%; height: auto; }
+.blog-thumb .overlay-p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(56, 227, 149, 0.9); visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.blog-thumb .overlay-p a { position: absolute; top: 50%; margin-top: -12px; left: 50%; margin-left: -15px; color: white; }
+.blog-item { margin-bottom: 40px; overflow: hidden; }
+.blog-item:hover .overlay-p { visibility: visible; opacity: 1; }
+.blog-title { width: 100%; text-align: center; }
+.blog-title a { color: #38e395; font-size: 18px; text-transform: uppercase; }
+.load-more { width: 100%; text-align: center;margin: 30px 0 10px; }
+/*==///////////////////////////////////////////
+//                Read More Buttons              
+/////////////////////////////////////////==*/
+.readmore {
+color: #ff1919;
+}
+.readmore a, a:hover {
+text-decoration: none;
+transition: all 150ms ease-in 0s;
+color:#333;
+}
+.widget .widget-item-control a img{display:none;}
+.map-holder { border: 1px solid #d5dbe0; padding: 6px; background-color: #fafafa; }
+.contact-form { margin-top: 1px; }
+.contact-form input, .contact-form textarea { width: 100%; font-size: 16px; display: block; border: 1px solid #d5dbe0; padding: 10px 15px; outline: 0; }
+.contact-form input { height: 46px; margin-bottom: 30px; }
+.contact-form label { font-weight: normal; }
+.contact-form label.required:after { content: "*"; color: red; margin-left: 1px; }
+.submit-btn { margin-top: 10px; }
+.first-footer {
+padding-top:1300px;
+background-color: #FFFFF;
+padding: 0 7%; 
+text-align: left;
+font-size:18px;
+padding-left: 0 !important;
+}
+.social-text-bottom {
+  position: relative; 
+  font-weight: normal;
+  padding: 0 0 1em;
+  text-align: left;
+}
+.social-text-bottom::before {
+  content:'';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  bottom: 0;
+  background-color: #333;
+}
+.first-footer .social-footer ul li {display: inline; padding: 10px;}
+.first-footer .social-footer ul li a {        font-family: "DM Sans", sans-serif; text-align: cenleter; line-height: 18px; color: #333; padding-bottom: 5px;}
+#keeptzy{color:#000;}
+.bottom-footer a { color:#000; }
+.bottom-footer .credits { text-align: right; }
+@media (max-width: 991px) { #main-content { width: 100%; }
+.first-footer { border-left: 0; }
+.flexslider .slides, .flexslider, .main-slider { height: auto; }
+.service-item { margin-bottom: 30px; }
+.progess-bars { margin-top: 40px; } }
+@media (max-width: 767px) { .slider-caption a, .slider-caption p { display: none; top: 50px !important; } }
+@media (max-width: 581px) { .slider-caption { display: none; } }
+
+    ]]>
+  </b:skin>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <style type='text/css'>
+      #contact-form input:not(.submit):not([id$=_contact-form-submit]),
+      #contact-form textarea {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        max-width: 100%;
+        outline: 0;
+        border-color: #d5dbe0;
+        box-shadow: none;
+                font-family: "DM Sans", sans-serif;
+        color: #868C92;
+      }
+
+      .message-wrp {
+        text-align: center;
+        float: left;
+        width: 100%;
+      }
+
+      #contact-formForm1 {
+        display: none !important
+      }
+
+      .submit.largeButton,
+      #contact-form [id$=_contact-form-submit] {
+        width: inherit;
+      }
+
+      #contact-form .contact-form-error-message-with-border {
+        margin: 20px 16px 0px;
+        box-shadow: none;
+        padding: 10px;
+                font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background: #fff;
+        color: #e20b0b;
+        border: 0;
+      }
+
+      #contact-form .contact-form-success-message-with-border {
+        margin: 10px 16px 10px;
+        box-shadow: none;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        background: #fff;
+        color: green;
+        border: 0;
+                font-family: "DM Sans", sans-serif;
+      }
+
+      .contact-form-cross {
+        display: none;
+      }
+
+      .photos-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 25px;
+      }
+
+      .photos-container img {
+        width: 48%;
+        border-radius: 18px;
+      }
+    </style>
+  </b:if>
+  <b:if cond='data:blog.pageType != &quot;index&quot;'>
+    <style type='text/css'>
+      div.post-header {
+        margin: 10px 0;
+      }
+
+      #relatedpostssum h4 &gt;
+
+      a {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .related-post p,
+      .related-post h4 {
+                font-family: "DM Sans", sans-serif;
+        height: 20px;
+        overflow: hidden;
+        padding: 0 4px;
+      }
+
+      #relatedpostssum h2 {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        color: #000;
+                font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 8px 5px;
+        padding: 5px 3px;
+      }
+
+      .related-post {
+        float: left;
+        width: 260px;
+      }
+
+      .rpimg img {
+        height: 185px;
+        padding: 0 4px;
+        width: 100%;
+      }
+
+      .fn a {
+        background: #ff0000 none repeat scroll 0 0;
+        color: #fff;
+                font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        padding: 1px 5px !important;
+      }
+
+      .fn {
+        background: #efefef none repeat scroll 0 0;
+        color: #000;
+        padding: 12px !important;
+      }
+
+      .post-header-line-1 .post-timestamp {
+        background: #ededed none repeat scroll 0 0;
+        color: #000;
+      }
+
+      .post-header-line-1 .post-timestamp a {
+        background: #ff0000 none repeat scroll 0 0;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 7px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        background: none !important;
+      }
+    </style>
+  </b:if>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'>
+    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+      <style type='text/css'>
+        .post-title.entry-title {
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+          color: #000;
+          display: block;
+                  font-family: "DM Sans", sans-serif;
+          font-size: 17px;
+          font-weight: 300;
+          letter-spacing: 0.5px;
+          line-height: 21px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+        }
+
+        .post-body {
+          display: none;
+        }
+
+        .post-title.entry-title a {
+          color: #000;
+          text-decoration: none;
+        }
+
+        .hentry {
+          float: left;
+          width: 31.333333%;
+          margin: 1%;
+        }
+
+        .hentry img {
+          width: 100%;
+          height: 250px;
+        }
+
+        @media (max-width: 991px) {
+          .hentry img {
+            max-height: 250px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .text-header {
+            top: 224px
+          }
+
+          .hentry {
+            width: 48%;
+          }
+
+          #main-content &gt;
+          div.header-bg &gt;
+          div &gt;
+
+          p {
+            width: 90%;
+          }
+        }
+
+        @media (max-width: 500px) {
+          .hentry {
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .section-content {
+            padding: 0 5% !important;
+          }
+        }
+
+        @media (max-width: 615px) {
+          .section-content {
+            padding: 0 0% !important;
+          }
+        }
+
+        @media (max-width: 554px) {
+          .section-content {
+            padding: 0 8% !important;
+          }
+        }
+      </style>
+    </b:if>
+  </b:if>
+  <style>
+    html,
+    body {
+      background-color: white;
+      scroll-behavior: smooth;
+    }
+
+    #test {
+      color: #fff;
+              font-family: "DM Sans", sans-serif;
+      font-size: 34px;
+      font-weight: 500;
+      padding-bottom: 20px;
+      position: relative;
+      text-align: center;
+      top: 1px;
+    }
+
+    #my-work {
+      margin-top: 20vh;
+      background-color: #f1f3f4;
+      color: #333;
+              font-family: "DM Sans", sans-serif;
+      padding: 24px;
+    }
+    .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+}
+
+.col-md-9 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Animated arrow styles */
+.scroll-down {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+}
+
+.scroll-down a {
+    color: #333;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+.arrow-down {
+    font-size: 24px;
+    animation: bounce 2s infinite;
+    display: block;
+    margin-bottom: 8px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.scroll-down a:hover {
+    color: #cccccc;
+}
+
+.scroll-down.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Profile photo hover animation */
+.profile-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 8;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Speech bubble styles */
+.speech-bubble {
+    position: absolute;
+    top: -100px;
+    left: -160px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    animation: float 3s ease-in-out infinite;
+    z-index: 5;
+    max-width: 280px;
+    line-height: 1.4;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #764ba2;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Second speech bubble with shining effect */
+.speech-bubble-2 {
+    position: absolute;
+    bottom: -60px;
+    right: -50px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+    animation: float2 3s ease-in-out infinite 1.5s, shine 2s ease-in-out infinite;
+    z-index: 6;
+    white-space: nowrap;
+}
+
+/* Shining overlay effect */
+.speech-bubble-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4) 50%,
+        transparent
+    );
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.speech-bubble-2::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #059669;
+    z-index: 2;
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Shimmer animation for the shining effect */
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Additional shine pulse effect */
+@keyframes shine {
+    0%, 100% {
+        box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .speech-bubble {
+        top: -80px;
+        left: -80px;
+        font-size: 12px;
+        padding: 10px 15px;
+        max-width: 200px;
+        line-height: 1.3;
+    }
+    
+    .speech-bubble-2 {
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        display: block;
+        text-align: center;
+        animation: none;
+    }
+    
+    .speech-bubble-2::after {
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .profile-container {
+        text-align: center;
+    }
+    
+    .profile-photo {
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+    
+    .container .row {
+        flex-direction: column !important;
+    }
+    
+    .col-md-8, .col-md-4 {
+        text-align: center !important;
+        padding: 20px !important;
+        margin-top: 0 !important;
+    }
+}
+
+/* Waving hand animation */
+.waving-hand {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding-left: 0px !important;
+    font-size: 1.3em !important;
+}
+
+.waving-hand:hover {
+    animation: wave 0.6s ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+}
+
+/* Collaboration Section Responsive Styles */
+@media (max-width: 768px) {
+    #collaboration-section {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        padding: 40px 20px !important;
+        max-width: 700px !important;
+    }
+    
+    #collaboration-section h2 {
+        font-size: 36px !important;
+        line-height: 1.3 !important;
+    }
+    
+    #collaboration-section p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    #collaboration-section .button-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+    
+    #collaboration-section a {
+        width: 200px !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #collaboration-section h2 {
+        font-size: 28px !important;
+    }
+    
+    #collaboration-section {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 30px 15px !important;
+        max-width: 500px !important;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <div id='fb-root' />
+  <script>
+    //<![CDATA[
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: 'YOUR_APPLICATION_ID',
+        status: true, // check login status
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: true // parse XFBML
+      });
+    };
+    (function () {
+      var e = document.createElement('script');
+      e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+      e.async = true;
+      document.getElementById('fb-root').appendChild(e);
+    }());
+    //]]>
+  </script>
+
+  <div class='container'>
+    <div class='first-footer' style='padding-top:50px;'>
+      <div class='social-footer' style='padding-left:5px;'>
+        <ul>
+          <li><a class='social-text-bottom' href='https://www.upwork.com/freelancers/eneseray' target='_blank'>Upwork</a></li>
+          <li><a class='social-text-bottom' href='https://github.com/eneseray' target='_blank'>Github</a></li>
+          <li><a class='social-text-bottom' href='http://www.instagram.com/enes.eray' target='_blank'>Instagram</a></li>
+          <li><a class='social-text-bottom' href='https://twitter.com/heyeneseray' target='_blank'>Twitter</a></li>
+          <li><a class='social-text-bottom' href='https://www.linkedin.com/in/enes-eray' target='_blank'>Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <b:section id="content-section" class="content-section" showaddelement="yes"></b:section>
+  <div id='main-content'>
+    <div class='container-fluid'>
+      <div class='section-content' id='about'>
+
+        <!-- Amdin Portfolio -->
+        <div class='container' style='margin-top: 50px; display: flex; justify-content: center; align-items: center; min-height: 70vh;'>
+          <div class='row' style='width: 100%; align-items: center;'>
+            <div class='col-md-8' style='text-align: left; padding-right: 50px;'>
+              <p style='font-family: "DM Sans", sans-serif; font-size:35px; margin-top: 0px; color: #000000;'>
+                             <span style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:36px; padding-left: 0px; color: #000000;'>
+                 <span class="waving-hand">👋</span> Hey! It's Enes.</span>
+              <br>
+              </br>
+              <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:30px; padding-left: 0px; top:0px; color: #000000;'>
+              Your trusted freelance partner for <br></br>
+              crafting exceptional
+                </span>
+              <span style='background-color: #000000; color: white; padding: 4px 8px; 
+              border-radius: 4px; font-weight: bold; font-size:30px; top:-2px;'>
+                software products.</span>
+               <br>
+              </br>
+<!--
+              <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>
+              I create mobile applications, websites and AI integrations for<br></br>
+               8+ years from 0 -> 1.
+              </span>
+
+              <br>
+              </br>
+  -->
+              <a href="mailto:enes@eneseray.com" style='
+                display: inline-block;
+                background-color: #191919;
+                color: white;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-right: 15px;
+                transition: background-color 0.3s ease;
+                border: 2px solid #191919;
+              '>Email Me</a>
+              
+              <a href="https://cal.com/eneseray/30min" style='
+                display: inline-block;
+                background-color: white;
+                color: #191919;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 20px;
+                transition: background-color 0.3s ease;
+                border: 2px solid #191919;
+              '>Book a Call</a>
+
+              <div class="scroll-down">
+                <a href="#my-work">
+                  <span class="arrow-down">↓</span>
+                  view my work
+                </a>
+              </div>
+
+              <br>
+              </br>
+ <!--
+              I've been developing mobile applications since my childhood years. This journey started with C++, keeps
+              going with developing <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>mobile
+                applications.</span>
+              <br>
+              </br>
+              My passion for developing applications for both <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>Android</span>
+              and <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>iOS</span>
+              brought me so much experience in Java/Kotlin and Swift languages. After 8 years of experience in mobile
+              development, I've been working as a <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>freelancer</span>
+              for 5 years.
+
+              <br>
+              </br>
+              Also I am a <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>digital
+                nomad</span>
+              traveling to various countries while working on <span
+                style='font-weight:bold; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>indie</span>
+              digital products with a small team.
+              <br>
+              </br>
+
+              You can contact me at <a href="mailto:enes@eneseray.com"
+                style='font-weight:bold; color: white; font-family: "DM Sans", sans-serif; font-size:25px; padding-left: 0px; top:0px;'>enes@eneseray.com<i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#fffff" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#fffff" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#ffffff" stroke-linecap="square" />
+                  </svg>
+                </i></a> <i> or  </i> 
+                <a target="_blank" href="https://cal.com/eneseray/30min"
+                style='font-weight:bold; color: white; font-family: "DM Sans", sans-serif; margin-left: 5px;'>Book a meeting <i>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8333 10.8333V4.16663H9.16667" stroke="#fffff" stroke-linecap="square" />
+                    <path d="M15.8333 4.16663L15 4.99996" stroke="#fffff" stroke-linecap="round" />
+                    <path d="M15 5L4.16667 15.8333" stroke="#ffffff" stroke-linecap="square" />
+                  </svg>
+                </i></a>
+                -->
+            </p>
+
+            </div>
+            <div class='col-md-4' style="text-align: center; margin-top: 0px;">
+              <div class='wrp'>
+                <div class="profile-container">
+                  <div class="speech-bubble">I create mobile applications, websites and AI integrations for 8+ years.</div>
+                  <div class="speech-bubble-2">Open to new projects.</div>
+                  <img
+                    class="profile-photo"
+                    src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQiPGfKR4nFDCmnyCuICjlc2WRTeCIccbQ6Ns_N4cuKBCtkDf3WizPNvVlX6e7CcIvhyphenhyphen6UtQQrgSAdZ-wNHM_Id8TSdHXdpzt_65Rme4JzRHUjMrM3wA07kEsTkfYbqU3QvUPeQYzWSCFEsEyAHXCgQikJwcq0VVcNy26xupKbppikT7mSyD0EJpfX4qhU/s1080/eneseray.jpg'
+                    style='border-radius: 50%; width: auto; max-width: 300px; height: auto; max-height: 300px; aspect-ratio: 1;' />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Amdin Portfolio [end] -->
+
+        <div id="my-work">
+
+          <div style="display:flex; flex-wrap: wrap; align-items: center;">
+            <h1 style="margin-right: 10px; color: #000000;">Top-notch software development. </h1>
+            <h1 style="color:#000000B5;">My passion.</h1>
+            </div> 
+
+          <div class="photos-container">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ftPDNTD4HUUgsVPoeXMnGHpTTLOpE1blsKiajYC62VJ02JxYqevfLQWk1lrrnY4_toAA4WJQICUMJpYmkunLDaWDc3bktK9GJFBLvqUFW-Q8e9HuKmJzoeFr2QCYBAQ76eSTU1AvQyER-96bIcGW0JpcvJHMjPVtiXO6E0oLir0BY_inz0gdKANVlf-C/s987/chargingup-1.png"
+              alt="Charging Up" />
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJiDVJkzKx9oMFXiDjiXp94C5CKGLWj2MdshkfkJNBUubUMWCU5k-_0r75pM4gj1OffI3W29cjvXrAiRgeExPTg5Xcd7KiOmm0ZVxeIBaA1wUIyGHA8SwrU7jlSmYRiSxMcbid6KTY3ucaHtfkuSeJR8wxa_WdblX1w8WZQH966Os2qvV-GwN3wJhk7eGv/s987/pintraveler-1.png"
+              alt="Pin Traveler" />
+          </div>
+
+          <div class="photos-container">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq88TYsPpwHcXHdLN9kLPcKrFTxkKHM5EFNQJN1UePPXP0kvDkNNcaGSJrJA3ybaMMCIT-vvRa_bqAyOBGogCDk0kCfGA3y2liIT79NBGkndZrvuqoi24C8q8gHMfP_Asd1-VeY7tiKhhjxUkrWz0geZ_oiOCEkfSxHKtJPP1ytHPTposIRaNeOJkhyphenhyphenJP9/s987/metta-1.png"
+              alt="Metta" />
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIhbRBOz_Lqg68_uJJwHXugZXpi8DTYcCIZfFP82r_Cd5x4hMyr8wi9iuIBSSZmmeT8v2mVQTOD2Kcrl1azmtu6xc_w7lY61dhwm2Q39kos3Pdn6VvJvAnwJR3sZ_keTMwWjGDIXTb0f_p30myyd92_H_otWlC5k2W_AaJyXZM_FotY0CmADtGhASf2cak/s987/1%20android%20developer.png"
+              alt="Insta Saver" />
+          </div>
+        </div>
+
+        <!-- Collaboration Section -->
+        <div id="collaboration-section" style="
+          background-color: #f8f9fa;
+          padding: 50px 40px;
+          text-align: center;
+          margin-top: 100px;
+          border-radius: 8px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 800px;
+        ">
+          <!-- Calendar Icon -->
+          <div style="
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            margin: 0 auto 25px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+          ">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="white" stroke-width="2" fill="none"/>
+              <line x1="16" y1="2" x2="16" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="8" y1="2" x2="8" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="3" y1="10" x2="21" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <rect x="7" y="14" width="3" height="3" fill="white" rx="1"/>
+            </svg>
+            <!-- Small decorative elements -->
+            <div style="
+              position: absolute;
+              top: -6px;
+              right: -6px;
+              width: 16px;
+              height: 16px;
+              background: #ffd700;
+              border-radius: 50%;
+              border: 2px solid white;
+            "></div>
+          </div>
+
+          <!-- Main Heading -->
+          <h2 style="
+            font-family: 'DM Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          ">Let's build something awesome together.</h2>
+
+          <!-- Description -->
+          <p style="
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            color: #6b7280;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto 35px auto;
+            font-weight: 400;
+          ">I'm excited to hear about what you're building. Reach out and let's build something truly special together.</p>
+
+          <!-- Action Buttons -->
+          <div class="button-container" style="
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+          ">
+            <a href="mailto:enes@eneseray.com" style="
+              background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+              color: white;
+              padding: 16px 32px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+              min-width: 140px;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(79, 70, 229, 0.4)'"
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(79, 70, 229, 0.3)'">
+              Reach Out
+            </a>
+
+            <a href="https://cal.com/eneseray/30min" target="_blank" style="
+              background: #e5e7eb;
+              color: #374151;
+              padding: 16px 32px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              min-width: 140px;
+            " onmouseover="this.style.background='#d1d5db'; this.style.transform='translateY(-2px)'"
+               onmouseout="this.style.background='#e5e7eb'; this.style.transform='translateY(0)'">
+              Book a Call
+            </a>
+          </div>
+        </div>
+        <!-- End Collaboration Section -->
+
+        <!-- Signature Section -->
+        <div style="
+          text-align: center;
+          margin-top: 80px;
+          margin-bottom: 60px;
+          padding: 0 20px;
+        ">
+          <p style="
+            font-family: 'Caveat', cursive;
+            font-size: 32px;
+            color: #6b7280;
+            margin: 0;
+            line-height: 1.4;
+            font-weight: 400;
+          ">Best,<br/>Enes Eray</p>
+        </div>
+        <!-- End Signature Section -->
+
+      </div>
+    </div>
+  </div>
+
+<script>
+// Hide scroll down arrow when user scrolls down
+window.addEventListener('scroll', function() {
+    const scrollDown = document.querySelector('.scroll-down');
+    const scrollPosition = window.scrollY;
+    
+    // Hide arrow after scrolling 200px down
+    if (scrollPosition > 200) {
+        scrollDown.classList.add('hidden');
+    } else {
+        scrollDown.classList.remove('hidden');
+    }
+});
+</script>
+
+</body>
+
+</html>

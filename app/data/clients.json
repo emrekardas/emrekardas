@@ -1,0 +1,10 @@
+[
+  {
+    "id": "client-001",
+    "name": "Halilcan Bey",
+    "company": "Halilcan Kurumsal",
+    "email": "halilcan@example.com",
+    "phone": "+90 555 123 45 67",
+    "notes": "Kurumsal web sitesi teklifi."
+  }
+]
