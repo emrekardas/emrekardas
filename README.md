@@ -23,7 +23,9 @@ Software engineer based in London, building digital products end-to-end — from
 
 **[LUUK](https://luuk.london)** — a digital studio crafting websites, apps and AI-driven growth systems for clients.
 
-Selected client work: **Finitura** · **Rise & Bun** · **All That Falafel** · **Farm & Flynn** · **Kaan Dil Okulu** · **Isla Lingua**
+**Selected work**
+
+`Finitura` `Beplo` `Rise & Bun` `Prev` `ParkIst` `Özerhisar Nerede` `All That Falafel` `Farm & Flynn` `Kaan Dil Okulu` `Isla Lingua`
 
 ### 🛠️ Tech Stack
 
