@@ -21,12 +21,9 @@ Software engineer based in London, building digital products end-to-end — from
 
 ### 🚀 Currently Building
 
-| Project | What it is |
-| --- | --- |
-| [**LUUK**](https://luuk.london) | Digital studio — web, mobile & AI-driven products for clients |
-| [**Scanify**](https://apps.apple.com/gb/app/scanify/id6738396697) | iOS app published on the App Store |
-| [**ruyayorum.la**](https://www.ruyayorum.la/) | Dream interpretation platform |
-| [**filmoneri.si**](https://filmoneri.si/) | Movie recommendation platform |
+**[LUUK](https://luuk.london)** — a digital studio crafting websites, apps and AI-driven growth systems for clients.
+
+Selected client work: **Finitura** · **Rise & Bun** · **All That Falafel** · **Farm & Flynn** · **Kaan Dil Okulu** · **Isla Lingua**
 
 ### 🛠️ Tech Stack
 
