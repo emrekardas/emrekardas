@@ -54,17 +54,6 @@ Software engineer based in London, building digital products end-to-end — from
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
 
-### 📊 GitHub Stats
-
-<div align="center">
-  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=emrekardas&show_icons=true&theme=transparent&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=emrekardas&layout=compact&theme=transparent&hide_border=true&langs_count=6" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=emrekardas&theme=transparent&hide_border=true" />
-</div>
-
 ---
 
 <div align="center">
