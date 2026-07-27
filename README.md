@@ -21,11 +21,13 @@ Software engineer based in London, building digital products end-to-end — from
 
 ### 🚀 Currently Building
 
-**[LUUK](https://luuk.london)** — a digital studio crafting websites, apps and AI-driven growth systems for clients.
-
-**Selected work**
-
-`Finitura` `Beplo` `Rise & Bun` `Prev` `ParkIst` `Özerhisar Nerede` `All That Falafel` `Farm & Flynn` `Kaan Dil Okulu` `Isla Lingua`
+| | |
+| --- | --- |
+| **[LUUK](https://luuk.london)** | Digital studio — websites, apps & AI-driven growth systems for clients |
+| **Hospitality** | Rise & Bun · All That Falafel · Farm & Flynn |
+| **Business & Services** | Finitura · Beplo · Prev |
+| **Education** | Kaan Dil Okulu · Isla Lingua |
+| **Apps & Local** | ParkIst · Özerhisar Nerede |
 
 ### 🛠️ Tech Stack
 
